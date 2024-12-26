@@ -1,0 +1,214 @@
+/* 重置樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局樣式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Banner 樣式 */
+header {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    height: 48px;
+}
+
+.banner h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero 區塊樣式 */
+.hero {
+    position: relative;
+    min-height: 800px;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.hero-content {
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-button {
+    background: #2563eb;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background: #1d4ed8;
+}
+
+/* 成就區塊樣式 */
+.achievements {
+    padding: 5rem 0;
+    background: #f9fafb;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    text-align: center;
+}
+
+.achievement-card img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 政策重點區塊樣式 */
+.future-policy {
+    padding: 5rem 0;
+    background: white;
+}
+
+.policy-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.hightlight {
+  font-size: 1.5em;
+  color: red;
+  font-weight: bolder;
+}
+
+/* 標語區塊樣式 */
+.slogan {
+    padding: 5rem 0;
+    background: #2563eb;
+    color: white;
+    text-align: center;
+}
+
+.slogan h2 {
+    font-size: 2.5rem;
+}
+
+/* 影片區塊樣式 */
+.videos {
+    padding: 5rem 0;
+    background: #f9fafb;
+}
+.videos p {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container img {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .slogan h2 {
+        font-size: 2rem;
+    }
+}
