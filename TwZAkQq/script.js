@@ -39,7 +39,7 @@ function App() {
         {/* Achievements Section */}
         <section className="achievements">
             <div className="container">
-                <h2 className="section-title">2024 施政成果</h2>
+                <h2 className="section-title">2024 全民社福補貼辦法</h2>
                 <div className="achievements-grid">
                     {[
                         {
@@ -63,7 +63,8 @@ function App() {
                     ].map((item, index) => (
                         <div key={index} className="achievement-card">
                             <img src={item.image} alt={item.title} />
-                            <h3>{item.title}<br/>{item.subtitle}</h3>
+                            <h3>{item.title}</h3>
+                            <h4>{item.subtitle}</h4>
                             <p>{item.description}</p>
                         </div>
                     ))}
@@ -101,8 +102,7 @@ function App() {
         {/* Slogan 2 Section */}
         <section className="future-policy">
             <div className="container">
-                <h2 className="section-title">這不是詐騙
-                  <br/>福利真的不見了</h2>
+                <h2 className="section-title">福利變不見<br/>這不是詐騙</h2>
             </div>
         </section>
 
@@ -110,20 +110,20 @@ function App() {
             <h2 className="news-title">相關新聞</h2>
             <ul className="news-list">
                 {[
-                  // {
-                  //     title: "財劃法三讀 藍白聯手增3753億統籌分配稅款",
-                  //     url: "https://www.cna.com.tw/news/ahel/202412200377.aspx",
-                  //     date: "2024-12-20"
-                  // },
-                  // {
-                  //     title: "財劃法三讀 藍白聯手增3753億統籌分配稅款",
-                  //     url: "https://www.cna.com.tw/news/ahel/202412200377.aspx",
-                  //     date: "2024-12-20"
-                  // },
                   {
-                      title: "財劃法三讀 藍白聯手增3753億統籌分配稅款",
+                      title: "財劃法三讀 藍白聯手增3753億統籌分配稅款 | 中央社",
                       url: "https://www.cna.com.tw/news/ahel/202412200377.aspx",
                       date: "2024-12-20"
+                  },
+                  {
+                      title: "《財劃法》修正地方財源增3,753億元 財部憂支出浪費 | 工商時報",
+                      url: "https://www.ctee.com.tw/news/20241221700024-430104",
+                      date: "2024-12-21"
+                  },
+                  {
+                      title: "修財劃法未考慮事權不合理 主計長要地方拿回省府業務 | 聯合新聞網",
+                      url: "https://udn.com/news/story/124307/8443364",
+                      date: "2024-12-23"
                   }
                   ].map((item, index) => (
                     <li key={index} className="news-item">
@@ -136,24 +136,25 @@ function App() {
             </ul>
         </div>
 
-        {/* Videos Section */}
-        <section className="videos">
+        {/* intro Section */}
+        <section className="intro">
             <div className="container">
-                <h2 className="section-title">更多財劃法修法相關圖卡</h2>
-                <div className="videos-grid">
-                    {[
-                        'https://scontent.ftpe9-1.fna.fbcdn.net/v/t39.30808-6/471268816_1171430257680063_3091705327013465478_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MjhUVjDeBvYQ7kNvgHI7c-g&_nc_zt=23&_nc_ht=scontent.ftpe9-1.fna&_nc_gid=AJtgo1SaH3F6-Qg2gA7J0Mu&oh=00_AYB0G_Qk-MeKjpAyue1gg0l7uKFSxV7rKn2Z60PyDxLbXA&oe=67712F25',
-                        'https://scontent.ftpe9-1.fna.fbcdn.net/v/t39.30808-6/471499696_1125087012336175_1159454231533084347_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZJIVX7Ht7lgQ7kNvgE1nJHd&_nc_zt=23&_nc_ht=scontent.ftpe9-1.fna&_nc_gid=AOwZ1PjnwltLzrCs4DGzSZf&oh=00_AYDmBbnoGQeMZDZTmnU_t-YdrWqDr9WoNj17LHHj0SABCQ&oe=67714808',
-                        'images/bZvt56f.png'
-                    ].map((img, index) => (
-                        <div key={index} className="video-container">
-                            <img src={img}/>
-                        </div>
-                    ))}
-                </div>
+                <p>
+                  我們是關心社會的一群公民<br/>
+                  立法院應該跟其他院會合作<br/>
+                  共同擘劃施政藍圖<br/>
+                  而不是惡性競爭<br/>
+                  你以為的監督，其實是在透支未來
+                </p>
+                <p>
+                  沒有實質討論不是真的民主<br/>
+                  希望透過這樣的行為藝術網站<br/>
+                  讓更多人了解事情的嚴重性<br/>
+                </p>
             </div>
         </section>
-    </div>);
+    </div>
+    );
 
 }
 
