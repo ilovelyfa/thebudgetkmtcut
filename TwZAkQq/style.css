@@ -140,6 +140,10 @@ header {
     background: white;
 }
 
+.future-policy h2 {
+    font-size: 5em;
+}
+
 .policy-text {
     max-width: 800px;
     margin: 0 auto;
@@ -154,14 +158,93 @@ header {
 
 /* 標語區塊樣式 */
 .slogan {
-    padding: 5rem 0;
-    background: #2563eb;
+    position: relative;
+    min-height: 800px;
+    height: 100vh;
     color: white;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.slogan h2 {
-    font-size: 2.5rem;
+.slogan-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.slogan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.slogan-content h2 {
+    font-size: 12em;
+}
+
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #2c5282;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.news-link:hover {
+    color: #1a365d;
+}
+
+.news-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
 }
 
 /* 影片區塊樣式 */
@@ -210,5 +293,8 @@ header {
     
     .slogan h2 {
         font-size: 2rem;
+    }
+    .slogan-content h2 {
+        font-size: 5em;
     }
 }
